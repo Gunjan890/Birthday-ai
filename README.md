@@ -17,7 +17,7 @@ A simple and special **Happy Birthday Website** made with ❤️ for my friend.
 ## 🌐 Live Demo  
 
 <p align="center">
-  <a href="https://Gunjan890.github.oi/Birthday-ai/">
+  <a href="https://Gunjan890.github.io/Birthday-ai/">
     <img src="https://img.shields.io/badge/🚀%20Live%20Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
   </a>
 </p>
