@@ -25,39 +25,6 @@
   <div id="gradient"></div>  	
   
   <canvas id="c"></canvas>
-    <!-- Floating Music Button -->
-  <button id="musicToggleBtn" onclick="toggleAudio()" style="position: fixed; bottom: 20px; right: 20px; z-index: 99999; background: #e11d48; color: white; border: none; padding: 12px 18px; border-radius: 50px; font-size: 15px; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.3); cursor: pointer;">
-    🎵 Play Song
-  </button>
-
-  <script>
-    const song = document.getElementById('bdaySong');
-    const btn = document.getElementById('musicToggleBtn');
-
-    function toggleAudio() {
-      if (song.paused) {
-        song.play().then(() => {
-          btn.innerText = "⏸ Pause Song";
-          btn.style.background = "#2563eb";
-        }).catch(err => alert("Audio play error: " + err));
-      } else {
-        song.pause();
-        btn.innerText = "🎵 Play Song";
-        btn.style.background = "#e11d48";
-      }
-    }
-
-    // Screen par pehla touch/click hote hi auto-play ki koshish karega
-    document.addEventListener('touchstart', function() {
-      if (song.paused) {
-        song.play().then(() => {
-          btn.innerText = "⏸ Pause Song";
-          btn.style.background = "#2563eb";
-        }).catch(() => {});
-      }
-    }, { once: true });
-  </script>
-  
   <audio id="bdaySong" src="song.mp3" loop preload="auto"></audio>
   <div class="container">
     <img src="img/banner.png" alt="Birthday banner" class="banner" />
